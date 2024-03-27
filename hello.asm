@@ -8,7 +8,7 @@ host_exe_header:
 .paragraphs: dw 1       ; size of header + relocation table, in paragraphs
 .minalloc: dw 0         ; minimum required additional memory, in paragraphs
 .maxalloc: dw 0xFFFF    ; maximum memory to be allocated, in paragraphs
-.in_ss: dw 100h           ; initial relative value of the stack segment
+.in_ss: dw 1000h           ; initial relative value of the stack segment
 .in_sp: dw 0xF000       ; initial sp value
 .checksum: dw 0         ; checksum: 1's complement of sum of all words
 .in_ip: dw start        ; initial ip value
